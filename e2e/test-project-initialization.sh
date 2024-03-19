@@ -134,6 +134,7 @@ for pkg_manager in $pkg_managers; do
   assert_no_empty_files
   $pkg_runner hardhat compile
   $pkg_runner hardhat test
+  $pkg_runner hardhat coverage
   cd -
 
   # pkg_manager, typescript-viem, esm

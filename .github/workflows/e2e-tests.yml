@@ -4,9 +4,12 @@ on:
   push:
     branches:
       - "main"
+      - "ci-*"
   pull_request:
     branches:
       - "main"
+  workflow_dispatch:
+    # Keep this to allow for triggering manually
 
 jobs:
   run-e2e:
